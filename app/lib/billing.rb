@@ -49,7 +49,7 @@ class Billing
 
 				font_size = 10
 
-				image "./img/#{CLI_LOGO}", :at => [0,720], :scale => 0.5
+				(image "./img/#{CLI_LOGO}", :at => [0,720], :scale => 0.5) if CLI_LOGO != ""
 				text " "
 				text("#{LBL_DATE}: #{Time.now.strftime("%d-%m-%Y")}", :indent_paragraphs => 200, :align => :right)
 				text " "

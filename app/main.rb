@@ -24,6 +24,10 @@ require './lib/product'
 require './lib/validation'
 
 begin
+	Dir.mkdir("./log") if !FileTest.directory?("./log")
+	Dir.mkdir("./db") if !FileTest.directory?("./db")
+	Dir.mkdir("./img") if !FileTest.directory?("./img")
+	Dir.mkdir("./bill") if !FileTest.directory?("./bill")
 	backupDB
 	dbName = getDBCompleteName(DB_PATH,DB_NAME)
 	setLogFileCompleteName(LOG_PATH)
