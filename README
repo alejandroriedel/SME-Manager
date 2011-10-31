@@ -1,1 +1,30 @@
-Test Readme
+Small & Medium Enterprises Manager (1.0 beta)
+----------------------------------
+
+This application has been developed to fit the needs of SME regarding managing the business.
+
+This beta version handles customers, products, orders & billing. The final version will add functionality to these branches and also will be able to handle reporting.
+
+-----------------------------------
+
+######## IMPORTANT ########
+
+Please fill the required information in the config file (app/config/config.rb) in order to get this application working properly.
+
+	APP_LANG = "ESP"	#"ESP"	#"ENG"
+
+	LOG_PATH = "./log/"		#default log location
+	BILL_PATH = "./bill/"		#default billing location
+	DB_PATH = "./db/"		#default database location
+	DB_NAME = "your_sme_name.db"	#database name
+	DB_BK_DAYS = 15			#db backup minimum period
+
+	CLI_NAME = "Your Enterprise Name"
+	CLI_CUIT = "Your SME Reference number"
+	CLI_ADD = "Your Address. Your City. Your Country"
+	CLI_PHO = "Your Contact phone"
+	CLI_LOGO = "your_sme_logo.png"
+
+Directories such as log, db, bill and img will be created on first run. Take into account that for orders billing you will need to include your enterprise logo within /img folder.
+
+Your database will be backed every 15 days (actually, the first time you open the application passed 15 days from the last back up). If you want the DB Backup period, please modify DB_BK_DAYS.
