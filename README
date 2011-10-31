@@ -7,7 +7,21 @@ This beta version handles customers, products, orders & billing. The final versi
 
 -----------------------------------
 
-######## IMPORTANT ########
+######## REQUIREMENTS ########
+
+You should have this soft installed in order to run this application.
+
+	Ruby 1.8.7 at least
+	sqlite3
+
+Gems required
+
+	wxruby
+	prawn
+	sqlite3-ruby
+
+
+######## BEFORE FIRST USE ########
 
 Please fill the required information in the config file (app/config/config.rb) in order to get this application working properly.
 
