@@ -9,6 +9,7 @@ require './config/config'
 require './config/params'
 require './gui/about_screen'
 require './gui/cust_screens'
+require './gui/config_screen.rb'
 require './gui/dialogs'
 require './gui/gui'
 require './gui/main_screen'
@@ -28,9 +29,9 @@ begin
 	Dir.mkdir("./db") if !FileTest.directory?("./db")
 	Dir.mkdir("./img") if !FileTest.directory?("./img")
 	Dir.mkdir("./bill") if !FileTest.directory?("./bill")
-	backupDB
-	dbName = getDBCompleteName(DB_PATH,DB_NAME)
 	setLogFileCompleteName(LOG_PATH)
+	backupDB
+	dbName = getDBCompleteName(DB_PATH,DB_NAME)		
 	openDB(dbName)
 	createTables
 	GUIApp.new.main_loop

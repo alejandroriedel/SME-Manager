@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 ############ ENVIRONMENT SETTINGS ############
 APP_VERSION = "1.0 beta"
 RELEASE_DT = "2011-10"
@@ -6,6 +8,7 @@ DISP_LANG = "Español(ESP), English(ENG)"
 ############ RUNTIME SETTINGS ############
 GRID_COL_WIDTH_DT = 100
 CURRENT_DATE = Time.now.strftime("%Y-%m-%d")
+CNFG_FILE = "./config/config.rb"
 
 ############ LANGUAGE INDEPENDANT ############
 ERR_LOC_VAL_NAME = "/validation.rb(checkValidName)"
@@ -42,6 +45,7 @@ case APP_LANG
 		LBL_CUST = "CLIENTES"
 		LBL_PROD = "PRODUCTOS"
 		LBL_ORD  = "ORDENES"
+		LBL_CNFG = "CONFIGURACION"
 		LBL_ABOUT = "ACERCA DE..."
 		LBL_ID = "ID"
 		LBL_NAME = "NOMBRE"
@@ -91,6 +95,20 @@ case APP_LANG
 		LBL_BILL = "Factura"
 		LBL_CUIT = "CUIT"
 		LBL_OK = "CONFIRMACION"
+		LBL_INFO = "INFORMACION"
+		LBL_CNFG_LANG = "LANGUAGE / IDIOMA"
+		LBL_CNFG_CMP_NM = "COMPANY NAME / NOMBRE EMPRESA"
+		LBL_CNFG_CMP_ID = "COMPANY ID / CUIT EMPRESA"
+		LBL_CNFG_ADD = "ADDRESS / DIRECCION"
+		LBL_CNFG_PHO = "PHONE / TELEFONO"
+		LBL_CNFG_IMG = "COMPANY LOGO / LOGO EMPRESA"
+		LBL_CNFG_IMG_PATH = "LOGO PATH / RUTA LOGO"
+		LBL_CNFG_DB_PATH = "DB PATH / RUTA BD"
+		LBL_CNFG_DB_NM = "DB NAME / NOMBRE BD"
+		LBL_CNFG_DB_BK = "DB BACK UP PERIOD / PERIODO COPIA BD"
+		LBL_CNFG_DAYS = "DAYS / DIAS"
+		LBL_CNFG_LOG_PATH = "LOGS PATH / RUTA LOGS"
+		LBL_CNFG_BILL_PATH = "BILL PATH / RUTA FACTURAS"
 		############ BOTONES ############
 		BTN_RETR_ALL = "Listar todos"
 		BTN_RETR_DET = "Mostrar detalles"
@@ -161,6 +179,8 @@ case APP_LANG
 		WRN_MOD_ORDST_CONF = "Esta seguro de que quiere modificar el estado de la orden?"
 		WRN_DEL_CUST_CONF = "Esta seguro de que quiere eliminar el cliente?"
 		WRN_DEL_PROD_CONF = "Esta seguro de que quiere eliminar el producto?"
+		WRN_NEED_RESTART = "Los cambios de configuración se harán efectivos la proxima vez que inicie la aplicacion.\nEn caso de que los quiera de inmediato reinicie la aplicación"
+		WRN_NO_AVAIL_LOGO = "No se pudo cargar la imagen. Verifique que la ruta y nombre que se muestran en la pantalla de configuracion sean reales"
 		############ TEXTO ############
 		TXT_ABOUT_HEADER = "Esta aplicacion esta pensada como una herramienta para gestionar pequeñas empresas. Ofrece velocidad, simplicidad y todas las funcionalidades requeridas para manejar clientes, productos, ordenes y facturacion.\n\nAl estar en constante desarrollo, permite ajustar la aplicacion a las necesidades particulares del cliente. Si usted require una aplicacion a medida, no dude en contactarse por alguno de los medios provistos a continuacion.\n\nDesde ya muchas gracias por utilizar este producto."
 		TXT_ABOUT_APPINFO = "VERSION:\t#{APP_VERSION}\nRELEASED:\t#{RELEASE_DT}"

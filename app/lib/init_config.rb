@@ -24,11 +24,11 @@ def backupDB
 	end
 	dbBackupName = "#{DB_PATH}#{CURRENT_DATE}_#{DB_NAME.gsub('.db','_db.bk')}"
 	if bkFiles.length == 0
-		File.copy "#{DB_PATH}#{DB_NAME}", dbBackupName
+		FileUtils.cp "#{DB_PATH}#{DB_NAME}", dbBackupName
 	else
 		lastLogDate = Date.strptime("#{bkFiles.sort[bkFiles.length-1].split("_")[0]}", "%Y-%m-%d")
 		if (lastLogDate + (DB_BK_DAYS) <=> Date.strptime(CURRENT_DATE, "%Y-%m-%d")) == -1
-			File.copy "#{DB_PATH}#{DB_NAME}", dbBackupName
+			FileUtils.cp "#{DB_PATH}#{DB_NAME}", dbBackupName
 		end
 	end
 end

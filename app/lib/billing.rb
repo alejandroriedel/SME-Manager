@@ -48,8 +48,11 @@ class Billing
 				end		
 
 				font_size = 10
-
-				(image "./img/#{CLI_LOGO}", :at => [0,720], :scale => 0.5) if CLI_LOGO != ""
+				begin
+					(image "#{IMG_PATH}#{CLI_LOGO}", :at => [0,720], :scale => 0.5) if CLI_LOGO != ""
+				rescue
+					Dialog.new.showInfoDialog(LBL_INFO, WRN_NO_AVAIL_LOGO)
+				end
 				text " "
 				text("#{LBL_DATE}: #{Time.now.strftime("%d-%m-%Y")}", :indent_paragraphs => 200, :align => :right)
 				text " "
