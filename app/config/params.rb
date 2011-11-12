@@ -1,8 +1,8 @@
 # encoding: UTF-8
 
 ############ ENVIRONMENT SETTINGS ############
-APP_VERSION = "1.0 beta"
-RELEASE_DT = "2011-10"
+APP_VERSION = "1.0"
+RELEASE_DT = "2011-11"
 DISP_LANG = "Español(ESP), English(ENG)"
 
 ############ RUNTIME SETTINGS ############
@@ -183,7 +183,7 @@ case APP_LANG
 		WRN_NO_AVAIL_LOGO = "No se pudo cargar la imagen. Verifique que la ruta y nombre que se muestran en la pantalla de configuracion sean reales"
 		############ TEXTO ############
 		TXT_ABOUT_HEADER = "Esta aplicacion esta pensada como una herramienta para gestionar pequeñas empresas. Ofrece velocidad, simplicidad y todas las funcionalidades requeridas para manejar clientes, productos, ordenes y facturacion.\n\nAl estar en constante desarrollo, permite ajustar la aplicacion a las necesidades particulares del cliente. Si usted requiere una aplicacion a medida, no dude en contactarse por alguno de los medios provistos a continuacion.\n\nDesde ya muchas gracias por utilizar este producto."
-		TXT_ABOUT_APPINFO = "VERSION:\t#{APP_VERSION}\nLANZAMIENTO:\t#{RELEASE_DT}"
+		TXT_ABOUT_APPINFO = "VERSION:    \t#{APP_VERSION}\nLANZAMIENTO:\t#{RELEASE_DT}"
 		TXT_BILL_ABOUT = "Factura generada en forma automatica por '#{APP_NAME}' version #{APP_VERSION} #{RELEASE_DT}"
 		TXT_BILL_CONTACT = "Contacto: alejandro.riedel@gmail.com / 15-6041-4327"
 	when "ENG"
@@ -223,12 +223,12 @@ case APP_LANG
 		LBL_DAY = "DAY"
 		LBL_MONTH = "MONTH"
 		LBL_YEAR = "YEAR"
-		LBL_DAY_STA = "STRT DAY"
-		LBL_MONTH_STA = "STRT MONTH"
-		LBL_YEAR_STA = "STRT YEAR"
-		LBL_DAY_STP = "STOP DAY"
-		LBL_MONTH_STP = "STOP MONTH"
-		LBL_YEAR_STP = "STOP YEAR"
+		LBL_DAY_STA = "STA DAY"
+		LBL_MONTH_STA = "STA MNT"
+		LBL_YEAR_STA = "STA YR"
+		LBL_DAY_STP = "STP DAY"
+		LBL_MONTH_STP = "STP MNT"
+		LBL_YEAR_STP = "STP YR"
 		LBL_ADD = "ADD"
 		LBL_REMOVE = "REMOVE"
 		LBL_MOD_STK = "MODIFY STOCK"

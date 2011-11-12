@@ -1,9 +1,9 @@
-Small & Medium Enterprises Manager (1.0 beta)
+Small & Medium Enterprises Manager (1.0)
 ----------------------------------
 
 This application has been developed to fit the needs of SME regarding managing the business.
 
-This beta version handles customers, products, orders & billing. The final version will add functionality to these branches and also will be able to handle reporting.
+This version handles customers, products, orders & billing, in both Spanish and English languages.
 
 -----------------------------------
 
@@ -11,7 +11,7 @@ This beta version handles customers, products, orders & billing. The final versi
 
 You should have this soft installed in order to run this application.
 
-	Ruby 1.8.7 at least
+	Ruby 1.8.7 at least (works better with 1.9.2)
 	sqlite3
 
 Gems required

@@ -46,7 +46,6 @@ end
 
 def on_change_lang(cmd_event)
 	 @app_lang = cmd_event.string
-	puts @app_lang
 end
 
 def btn_ok_click(event)

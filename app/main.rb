@@ -30,10 +30,10 @@ begin
 	Dir.mkdir("./img") if !FileTest.directory?("./img")
 	Dir.mkdir("./bill") if !FileTest.directory?("./bill")
 	setLogFileCompleteName(LOG_PATH)
-	backupDB
 	dbName = getDBCompleteName(DB_PATH,DB_NAME)		
 	openDB(dbName)
 	createTables
+	backupDB
 	GUIApp.new.main_loop
 rescue => e
 	writeLog("ERROR", e.class.to_s, e.message, e.backtrace.to_s)
